@@ -4,6 +4,7 @@
         <title id="page-title">Google</title>
         <link href="styles/reset.css" rel="stylesheet">
         <link href="styles/style.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/22fb4ab41e.js" crossorigin="anonymous"></script>
     </head>
     <body>
   
@@ -17,15 +18,19 @@
         
         <div id="search-form">
             <form action=" /search">
-                <div id="search-bar">    
+                <div id="search-bar">
+                    <i class="fas fa-search"></i>    
                     <input type="text" class="search-bar">
+                             
                 </div>
                 <div id="buttons">
-                    <button class="button">Buscar con Google</button>
-                    <button class="">Voy a tener suerte</button>
+                    <input type="submit" id="buscar" class="button" value="Buscar con Google">
+                    <input type="submit" id="suerte" class="button" value="Voy a tener suerte">
                 </div>
             </form>
         </div>
+
+        <div class="separator"></div>
 
         <div id="languages">
 
@@ -33,12 +38,13 @@
                 <p>Ofrecido por Google en:</p>
             </div>
             <div id="languages-link">
-                <a href="https://www.google.com/" target="_blank">English</a>
+                <a href="https://www.google.com/">English</a>
                 <a href="https://www.google.com/">català</a>
                 <a href="https://www.google.com/">galego</a>
                 <a href="https://www.google.com/">euskera</a>
             </div>
 
         </div>
+ 
     </body>
 </html>
