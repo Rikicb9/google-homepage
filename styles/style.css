@@ -20,7 +20,7 @@ body {
 #search-form {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .search-bar {
@@ -39,7 +39,6 @@ body {
 .button {
     border-style: none;
     border-radius: 0.3rem;
-    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
     background-color: #f8f9fa;
     font-family: arial, sans-serif;
     font-size: 14px;
@@ -60,8 +59,8 @@ body {
 
 #search-bar i {
     position: absolute;
-    padding-top: 8px;
-    padding-left: 8px;
+    padding-top: 9px;
+    padding-left: 15px;
 }
 
 input:hover {
@@ -77,7 +76,7 @@ input:hover {
 }
 
 #languages {
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     display: flex;
     justify-content: center;
 }
@@ -88,7 +87,60 @@ input:hover {
 
 #languages-link {
     margin-left: 2px;
+    padding: 0 3px;
 }
 
+#languages-link a {
+    color: #1a0dab;
+    text-decoration: none;
+    padding: 0 3px;
+}
 
+.top-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.left-navbar {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    align-items: center;
+}
+
+.right-navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    align-items: center;
+}
+
+.top-nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0px 15px;
+    font-size: 14px;
+    font-family: arial, sans-serif;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.top-nav img {
+    margin-top: -5px;
+}
+
+.apps:hover {
+    background-color: rgba(60,64,67,0.08);
+}
 
