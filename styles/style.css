@@ -70,6 +70,10 @@ input:hover {
     color: #202124;
 }
 
+input[type=text] {
+    padding-left: 30px;
+}
+
 .separator {
     width: max-content;
     height: 1px;
@@ -136,12 +140,16 @@ ul {
     flex-shrink: 0;
     box-sizing: border-box;
     margin-top: 2rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
 }
 
 .España {
     padding: 15px 30px;
     border-bottom: 1px solid #dadce0;
     font-size: 15px;
+    color: #70757a;
 }
 
 @media only screen and (max-width:1200px) {
@@ -154,4 +162,70 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 20px;
+}
+
+.left-footer {
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
+    margin-left: 15%;
+}
+
+a.footer-link {
+    color: #70757a;
+    text-decoration: none;
+}
+
+.footer-link {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width:1250px) {
+    .middle-footer {
+        order: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.middle-footer {
+    order: 0;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 40%;
+}
+
+.right-footer {
+    justify-content: flex-end;
+    min-width: 30%;
+    order: 3;
+    margin-right: 15%;
+}
+
+.footer-button {
+    position: relative;
+}
+
+button.config-button {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    color: #70757a;
+    text-decoration: none;
+}
+
+.config-button {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.footer-button button {
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-family: arial, sans-serif;
 }
