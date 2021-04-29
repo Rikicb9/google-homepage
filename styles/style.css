@@ -100,6 +100,7 @@ input:hover {
     display: flex;
     flex-direction: row;
     padding: 2rem 2rem;
+    justify-content: space-between;
 }
 
 ul {
@@ -108,20 +109,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-.left-navbar {
-    display: flex;
-    justify-content: flex-start;
-    width: 50%;
-    align-items: center;
-}
-
-.right-navbar {
-    display: flex;
-    justify-content: flex-end;
-    width: 50%;
-    align-items: center;
 }
 
 .top-nav a {
@@ -144,3 +131,27 @@ ul {
     background-color: rgba(60,64,67,0.08);
 }
 
+#main-footer {
+    background: #f2f2f2;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    margin-top: 2rem;
+}
+
+.España {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:1200px) {
+    .copyright {
+        justify-content: space-evenly;
+    }
+}
+ 
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
